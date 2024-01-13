@@ -30,3 +30,5 @@ else:
 
 for i in range(3):
     print(table_of_numbers[i], end=", ")
+
+# Author - arekloko
