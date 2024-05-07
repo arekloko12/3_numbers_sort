@@ -18,15 +18,18 @@ if a >= b:
         table_of_numbers.append(str(a)+"(a)")
         table_of_numbers.append(str(b)+"(b)")
 else:
-    if a >= c:
+    if b >= c:
         table_of_numbers.append(str(b)+"(b)")
-        table_of_numbers.append(str(a)+"(a)")
-        table_of_numbers.append(str(c)+"(c)")
-    else:
-        if b >= c:
-            table_of_numbers.append(str(b)+"(b)")
+        if a >= c:
+            table_of_numbers.append(str(a)+"(a)")
+            table_of_numbers.append(str(c)+"(c)")
+        else:
             table_of_numbers.append(str(c)+"(c)")
             table_of_numbers.append(str(a)+"(a)")
+    else:
+        table_of_numbers.append(str(c)+"(c)")
+        table_of_numbers.append(str(b)+"(b)")
+        table_of_numbers.append(str(a)+"(a)")
 
 for i in range(3):
     print(table_of_numbers[i], end=", ")
